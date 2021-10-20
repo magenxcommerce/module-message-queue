@@ -1,0 +1,30 @@
+{
+    "name": "magenxcommerce/module-message-queue",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "magenxcommerce/framework": "103.0.*",
+        "magenxcommerce/framework-message-queue": "100.4.*",
+        "magenxcommerce/magento-composer-installer": "*",
+        "php": "~7.3.0||~7.4.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\MessageQueue\\": ""
+        }
+    },
+    "version": "100.4.0",
+    "replace": {
+        "magento/module-message-queue": "*"
+    }
+}
